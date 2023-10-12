@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+    font-family: "Gilroy";
+}
+#main{
+    width: 80%;
+    max-width: 1800px;
+    height: 100%;
+    margin-inline: auto;
+}
+a{
+    color: #212121;
+    transition: all ease 0.5s;
+}
+a:hover{
+    color: tan;
+}
+section{
+   width: 100%;
+}
+nav{
+    padding-block: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav h3{
+    font-family: 'burtons';
+    letter-spacing: 0.9px;
+    font-size: 21px;
+}
+.nav-btn{
+    display: flex;
+    align-items: center;
+    column-gap: 40px;
+}
+.nav-btn i{
+    font-size: 24px;
+}
+nav button{
+    padding: 5px 12px;
+    font-size: 15px;
+    border: none;
+    border-radius: 6px;
+    background-color: turquoise;
+    font-size: 19px;
+    letter-spacing: 1.9px;
+    color: white;
+}
+#container-one{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-block-start: 70px;
+}
+#container-one h1{
+    font-size: 56px; 
+    letter-spacing: 2px; 
+    color: teal;
+}
+#container-one h3{
+    width: max-content; 
+    margin-block: 12px; 
+    margin-inline: auto; 
+    font-size: 32px;
+}
+#container-one p{
+    max-width: 800px; 
+    text-align: center; 
+    margin-block: 20px;
+}
+.profile-icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: 10.5vw;
+    margin-bottom: 10px;
+}
+.profile-icons i{
+    font-size: 50px;
+}
+#container-one img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin-top: 30px;
+
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++ Page 2 Style ++++++++++++++++++++++++++++++++++++++++++++++++ */
+
+
+#section-two{
+    width: 100%;
+    margin-top: 60px;
+}
+h2{
+    font-size: 45px;
+}
+h2 span{
+    color: teal;
+}
+.card-container{
+    width: 100%;
+    margin-block: 30px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 30px;
+}
+.card{
+    width: 42%;
+    height: max-content;
+    border: 1px solid #dadada;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    padding: 30px 20px;
+    overflow: hidden;
+    transition: all ease 0.3s;
+}
+.card h3{
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2.5px;
+    color: #313131;
+}
+.sm-card-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+    width: 100%;
+}
+.sm-card{
+    width: 150px;
+    height: 150px;
+    border: 1px solid #dadada;
+    border-radius: 8px;
+    padding: 5px;
+}
+.sm-card img{
+    width: 50%;
+    padding-block: 5px;
+}
+.sm-card p{
+    margin-block: 6px;
+    padding: 2px 5px;
+    border: 1px solid #dadada;
+    width: fit-content;
+    border-radius: 3px;
+}
+
+/* +++++++++++++++++++++++++++++++++++++++++++++++++++ page 3 Style ++++++++++++++++++++++++++++++++++++++++++ */
+#section-three{
+    width: 100%;
+    margin-top: 60px;   
+    margin-bottom: 50px;
+}
+.about-img{
+    margin-block: 15px;
+    height: 130px;
+}
+.end-card:hover{
+    background-color: #dadada;
+    cursor: pointer;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++ Footer +++++++++++++++++++++++++++++++++++++++++++++++++++ */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    text-align: start;
+    padding-inline: 50px;
+    padding-bottom: 30px;
+    margin-block: 100px;
+}
+footer p{
+    color: #252525;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+@media (max-width:425px) {
+    #main{
+        width: 90%;
+    }
+    .nav-btn{
+        gap: 18px;
+    }
+    #container-one h1{
+        font-size: 39px ;
+    }
+    #container-one h3{
+        font-size: 22px ;
+        width: max-content;
+    }
+    .profile-icons i{
+        font-size: 36px;
+    }
+    #container-one img{
+        width: 150px;
+        height: 150px;
+    }
+    #section-two h2{
+        font-size: 32px;
+    }
+    .sm-card{
+        width: 100%;
+        height: fit-content;
+    }   
+    .sm-card img{
+        width: 30%;
+    }
+    footer p{
+        font-size: 12px;
+    }
+
+}
+@media (max-width:1042px) {
+    #container-one{
+        margin-block-start: 28px;
+    }
+    .card{
+        width: 100% !important;
+    }
+    #container-one img{
+        width: 220px;
+        height: 220px;
+        margin-top: 30px;
+    
+    }
+}
