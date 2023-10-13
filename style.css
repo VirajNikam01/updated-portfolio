@@ -14,8 +14,9 @@ body{
     --background-color: white;
     --text-color: black;
     --element-color: white;
-    --a:tan;
     --h3 : #313131;
+    --border-color : #dadada;
+    --auto-text: #571a1a;
     height: 100%;
     width: 100%;
     font-family: "Gilroy";
@@ -27,6 +28,8 @@ body.dark{
     --text-color: white;
     --element-color: hsl(209, 23%, 22%);
     --h3 : #e0e0e0;
+    --border-color : hsl(207, 26%, 17%);
+    --auto-text : rgb(255, 255, 255);
 }
 #main{
     width: 80%;
@@ -87,10 +90,21 @@ nav button{
     color: teal;
 }
 #container-one h3{
-    width: max-content; 
+    width: 246px; 
     margin-block: 12px; 
     margin-inline: auto; 
     font-size: 32px;
+}
+#container-one h3 span{
+    color: var(--auto-text);
+}
+#container-one h3 span::after{
+    content: "";
+    height: 30px;
+    width: 1.8px;
+    background-color: rgb(78, 78, 78);
+    display: inline-block;
+    margin-left: 3px;
 }
 #container-one p{
     max-width: 800px; 
@@ -144,7 +158,7 @@ h2 span{
     width: 42%;
     height: max-content;
     border-radius: 6px;
-    border: 1px solid #dadada;
+    border: 1px solid var(--border-color);
     text-align: center;
     padding: 30px 20px;
     overflow: hidden;
@@ -246,7 +260,7 @@ footer p{
     }
     #container-one h3{
         font-size: 22px ;
-        width: max-content;
+        width: 170px;
     }
     .profile-icons i{
         font-size: 36px;
